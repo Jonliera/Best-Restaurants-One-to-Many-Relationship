@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using BestRestaurants.Models;
 using System.Linq;
 
+
 namespace BestRestaurants.Controllers
 {
 public class RestaurantsController : Controller
@@ -37,8 +38,9 @@ public class RestaurantsController : Controller
       Restaurant thisRestaurant = _db.Restaurants.FirstOrDefault(restaurant => restaurant.RestaurantId == id);
       return View(thisRestaurant);
     }
+    }
   }
-}
+
 
 
 // //here's where we left off!

@@ -8,11 +8,12 @@
 }
 else
 {
-<ul>
-  @foreach (Cuisine cuisine in Model)
-  {
-    <li>@Html.ActionLink($"{cuisine.Type}", "Type"/*, new { id = cuisine.CuisineId }*/)</li>
-  }
-</ul>
+  <ul>
+    @foreach (Cuisine cuisine in Model)
+    {
+      <li>@Html.ActionLink($"{cuisine.Type}", "Type", new { id = cuisine.CuisineId })</li>
+    }
+  </ul>
 }
 <p>@Html.ActionLink("Add a cuisine", "Create")</p>
+@* <p>@Html.ActionLink("Home","Index","Home")</p> *@
